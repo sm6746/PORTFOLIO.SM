@@ -9,7 +9,7 @@ import { useState } from 'react';
 
 export function ProjectsSection() {
   const { ref, isVisible } = useScrollAnimation();
-  const [filter, setFilter] = useState('All');
+//const [filter, setFilter] = useState('All');
 
   const projects = [
     {

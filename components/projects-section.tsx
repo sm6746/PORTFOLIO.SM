@@ -3,7 +3,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Github, Star } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/use-scroll-animation';
-import { useState } from 'react';
+//import { useState } from 'react';
 /*import { ALL } from 'dns';*/
 /*import { table } from 'console';*/
 
@@ -75,7 +75,7 @@ export function ProjectsSection() {
   ];
 
   //const categories = ['All', 'Full Stack', 'Frontend', 'Backend'];
-  const filteredProjects = filter === 'All' ? projects : projects.filter(p => p.category === filter);
+  //const filteredProjects = filter === 'All' ? projects : projects.filter(p => p.category === filter);
 
   return (
     <section
@@ -101,7 +101,7 @@ export function ProjectsSection() {
           
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.map((project, index) => (
+            {projects.map((project, index) =>  (
               <Card
                 key={index}
                 className={`group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 hover:scale-105 border-4 border-transparent hover:border-purple-500 overflow-hidden bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 ${
